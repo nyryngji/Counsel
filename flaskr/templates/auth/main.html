@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="main_container">
+    <div class="banner">
+        <p style="font-size: 30px;">상담사분들을 위한 <br> 맞춤 케어 서비스</p>
+        <button type="button" class="btn_login" onclick="location.href = '/auth/login'">로그인</button>
+        <div class="developer_info">
+            <b><p style="font-size: 20px;">Team 1 developed</p></b>
+        </div>
+    </div>
+</div>
+</body>
+</html>

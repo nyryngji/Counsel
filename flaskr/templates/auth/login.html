@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 페이지</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='log.css') }}">
+</head>
+<body>
+  <div class="main_container">
+    <div class="banner">
+        <h1 style="margin-top: 10px">LOGIN</h1>
+        <form class="forms" method="post">
+            <label for="id">ID</label>
+            <input type="text" id="email" name="email">
+     
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password">
+            
+            <div class="for_login">
+                <input type="submit" style="font-weight: bolder; font-size: 15px;" value="로그인">
+            </div>
+        </form>
+        <p>don't have an account? <a href="{{ url_for('auth.register') }}" style="text-decoration: none; color: yellow;">Sign up.</a></p>
+    </div>
+  </div>
+</body>
+</html>
